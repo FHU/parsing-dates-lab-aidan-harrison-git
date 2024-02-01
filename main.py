@@ -23,10 +23,10 @@ def parse_month(raw_month):
 #parse_date function should return the date formated as MM/DD/YYYY
 #DO NOT REMOVE THIS FUNCTION
 def parse_date(user_string):
-    token1 = user_string.split()
+    token1 = date.split()
     raw_month = token1[0]
     raw_day = token1[1]
-    if int(raw_day) <=10:
+    if int(raw_day) <= 10:
         day = '0' + str(raw_day[0])
     else:
         day = str(raw_day[0:2])
@@ -40,10 +40,10 @@ def parse_date(user_string):
 
 #REMOVE PASS AND YOUR CODE GOES HERE
 if __name__ == '__main__':
-    user_string = input()
-    while user_string != -1:
-        parse_date(user_string)
-        user_string = input()
+    date = input()
+    while date != -1:
+        parse_date(date)
+        date = input()
         
         
 # hereagain
