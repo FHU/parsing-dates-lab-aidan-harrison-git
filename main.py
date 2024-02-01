@@ -23,7 +23,7 @@ def parse_month(raw_month):
 #parse_date function should return the date formated as MM/DD/YYYY
 #DO NOT REMOVE THIS FUNCTION
 def parse_date(user_string):
-    token1 = date.split()
+    token1 = user_string.split()
     raw_month = token1[0]
     if token1[1][-1] == ',':
         raw_day = token1[1][:-1]
