@@ -38,14 +38,14 @@ def parse_date(user_string):
     component_list.append(parse_month(raw_month))
     component_list.append(day)
     component_list.append(token1[2])
-    print('/'.join(component_list))
+    return '/'.join(component_list)
 
 
 #REMOVE PASS AND YOUR CODE GOES HERE
 if __name__ == '__main__':
     date = input()
-    while date != -1:
-        parse_date(date)
+    while date != '-1':
+        print(parse_date(date))
         date = input()
         
         
