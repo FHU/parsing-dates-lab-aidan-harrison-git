@@ -41,5 +41,9 @@ def parse_date(user_string):
 #REMOVE PASS AND YOUR CODE GOES HERE
 if __name__ == '__main__':
     user_string = input()
-    parse_date(user_string)
+    while user_string != -1:
+        parse_date(user_string)
+        user_string = input()
+        
+        
 # hereagain
