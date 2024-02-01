@@ -25,7 +25,7 @@ def parse_month(raw_month):
 def parse_date(user_string):
     token1 = date.split()
     raw_month = token1[0]
-    raw_day = token1[1]
+    raw_day = token1[1][:-1]
     if int(raw_day) <= 10:
         day = '0' + str(raw_day[0])
     else:
