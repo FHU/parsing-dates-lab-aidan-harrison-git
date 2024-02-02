@@ -2,6 +2,9 @@
 #as a string
 #January -> 1 (as a string)
 #YOU MAY USE THIS FUNCTION IF YOU WANT TO OR YOU MAY REMOVE IT
+from ast import Break
+
+
 def parse_month(raw_month):
     monthdict = {'January':'01',
                  'February':'02',
@@ -47,6 +50,9 @@ if __name__ == '__main__':
     while date != '-1':
         print(parse_date(date))
         date = input()
+        if date == '-1':
+            break
+        
         
         
 # hereagain
